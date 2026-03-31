@@ -1,0 +1,3 @@
+desktop-app/MiriSoran-Windows.tar.gz filter=lfs diff=lfs merge=lfs -text
+desktop-app/dist-win/MiriSoran/MiriSoran.exe filter=lfs diff=lfs merge=lfs -text
+project_backup.tar.gz filter=lfs diff=lfs merge=lfs -text
