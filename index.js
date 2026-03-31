@@ -9,10 +9,9 @@ const pool = new Pool({
 });
 
 app.get('/', (req, res) => {
-  res.send('Server is running! Try /tables to see your data.');
+  res.send('سێرڤەرەکە کار دەکات! بنووسە /tables بۆ بینینی خشتەکان');
 });
 
-// ئەم بەشە زیاد بکە بۆ بینینی خشتەکان
 app.get('/tables', async (req, res) => {
   try {
     const result = await pool.query("SELECT table_name FROM information_schema.tables WHERE table_schema = 'public'");
